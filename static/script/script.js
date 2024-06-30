@@ -71,59 +71,6 @@ function typeValidation(type) {
     }
 }
 
-// //upload file functiom
-
-
-// JavaScript code to dynamically set image source
-// function uploadFile(file) {
-//   listSection.style.display = 'block'; // Corrected property name
-//   var li = document.createElement('li');
-//   li.classList.add('in-prog');
-//   li.innerHTML = ` 
-//     <div class="col">
-//     <img src="static/images/imgpng.png" width="50" alt="img"> <!-- Set the image source directly -->
-//     </div>
-//     <div class="col">
-//       <div class="file-name">
-//         <div class="name">${file.name}</div>
-//         <span>50%</span>
-//       </div>
-//       <div class="file-progress">
-//         <span></span>
-//       </div>
-//       <div class="file-size">${(file.size / (1024 * 1024)).toFixed(2)}MB</div>
-//     </div>
-//     <div class="col">
-//       <svg xmlns="http://www.w3.org/2000/svg" height="24" class="cross" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
-//       <svg xmlns="http://www.w3.org/2000/svg" height="24" class="tick" viewBox="0 -960 960 960" width="24"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg>
-//     </div> 
-//   `;
-  
-//   listContainer.prepend(li);
-//   const formData = new FormData();
-//   formData.append('image_name', file);
-
-//   // Create a new XMLHttpRequest object
-//   const xhr = new XMLHttpRequest();
-
-//   // Define onload event handler
-//   xhr.onload = function() {
-//     li.classList.add('complete');
-//     li.classList.remove('in-prog');
-//   };
-
-//   // Define onprogress event handler
-//   xhr.upload.onprogress = function(e) {
-//     var percent_complete = (e.loaded / e.total) * 100;
-//     li.querySelectorAll('span')[0].innerHTML = Math.round(percent_complete) + '%';
-//     li.querySelectorAll('span')[1].style.width = percent_complete + '%';
-//   };
-
-//   // Open and send the request
-//   xhr.open('POST', '/', true);
-//   xhr.send(formData);
-// }
-
 function uploadFile(file) {
   listSection.style.display = 'block'; // Corrected property name
   var li = document.createElement('li');
